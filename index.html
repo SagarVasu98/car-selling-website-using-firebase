@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Add icon library -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDY47qiZcbl2v3nvarzX3AoEpFaNd6Md4g",
+    authDomain: "car-selling-website.firebaseapp.com",
+    databaseURL: "https://car-selling-website.firebaseio.com",
+    projectId: "car-selling-website",
+    storageBucket: "",
+    messagingSenderId: "421794518343",
+    appId: "1:421794518343:web:768b82ab5bad8125"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+
+<body>
+    <!-- SIGNUP FORM  -->
+    <form style="max-width:500px;margin:auto">
+        <h2 style="text-align: center">Register Form</h2>
+
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="usrnm" id="name">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="email" placeholder="Email" id="email" name="email">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" id="pass" name="psw">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-phone icon"></i>
+            <input class="input-field" type="number" placeholder="Phone Number" id="phone" name="Phone Number">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-user-circle-o icon"></i>
+            <input class="input-field" type="file" placeholder="file" id="file" name="file">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-phone icon"></i>
+            <input class="input-field" type="text" placeholder="City" id="city" name="Phone Number">
+        </div>
+        <div class="input-container">
+            <i class="fa fa-number icon"></i>
+            <input class="input-field" type="number" placeholder="Age" id="age" name="Age">
+        </div>
+
+
+        <button type="button" id="btn" class="btn" onclick="signUp()">SIGNUP</button>
+
+    </form>
+
+
+
+</body>
+
+<script src="js/app.js"></script>
+
+</html>

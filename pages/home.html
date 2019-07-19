@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>HOME</title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDY47qiZcbl2v3nvarzX3AoEpFaNd6Md4g",
+            authDomain: "car-selling-website.firebaseapp.com",
+            databaseURL: "https://car-selling-website.firebaseio.com",
+            projectId: "car-selling-website",
+            storageBucket: "",
+            messagingSenderId: "421794518343",
+            appId: "1:421794518343:web:768b82ab5bad8125"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <!-- Social Nav Bar -->
+
+    <div id="container">
+        <p>Welcome to  Car Selling center.
+
+            <span id="sp1">
+                <a href="#" class="fa fa-facebook"></a>
+            </span>
+
+            <span id="sp2">
+                <a href="#" class="fa fa-twitter"></i></a>
+            </span>
+
+            <span id="sp3">
+                <a href="#" class="fa fa-youtube"></a>
+            </span>
+
+            <span id="sp4">
+                <a href="#" class="fa fa-linkedin"></a>
+            </span>
+
+        </p>
+
+    </div>
+
+    <!-- Navigation Menu -->
+
+    <div class="navbar">
+        <a href="">
+        </a> 
+        <a class="active" href="home.html" ><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="create.html"> <i class="fa fa-plus"></i> Create </a>
+        <a href="all.html"><i class="fa fa-car"></i> All Cars</a>
+        <a href="account.html"><i class="fa fa-fw fa-user-circle"></i> My Account</a>
+        <a  href="users cars.html" ><i class="fa fa-fw fa-user"></i> User Cars</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+        <a href="../index.html"><i class="fa fa-fw fa-user"></i> Signup</a>
+        <a href="login.html"><i class="fa fa-fw fa-sign-in"></i> Login</a>
+
+        <a href="login.html" style="float: right;margin-right: 10px;" onclick="logout()"><i
+                class="fa fa-fw fa-sign-out"></i> Logout</a>
+    </div>
+
+
+
+    <!-- Slider -->
+    <div id="slider">
+
+        <div class="container">
+            <img src="../images/automobile-number-odometer-248747.jpg" width="100%" height="550px;" alt="">
+            <div class="centered">
+                <p id="marque"></p>
+
+                <div class="mySlides w3-container"
+                    style="width: 1140px; height: 398px;background-color: #EAEAEA;padding: 30px;">
+                    <p>
+                        <h4 style="letter-spacing: 16px;color: black; font-weight: bold;">BUY CAR, IN CHEAP PRICE !</h4>
+                        <h2 style="font-size: 50px;font-weight: bold;color: black">YOUR CAR CAN BRING SMILE TO
+                            YOUR FAIMLY FACES</h2>
+                        <button id="donte"
+                            style="width: 185px; height: 56px;background-color: #0e9077;color: white;font-weight: 600px;cursor: pointer;font-size: 18px;border: 2px solid #0e9077"
+                            onclick="buy()">BUY
+                            NOW</button>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Donation Process  -->
+
+    <div id="donation">
+        <h1 style="color: #0e9077;font-weight: bold;font-size:50px;"> BUYING PROCESS </h1>
+        <p>
+            The buying process from the time you arrive center until the time you leave
+        </p>
+        <div id="snackbar" style="margin-left: 300px"></div>
+
+
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3> 1: REGISTRATION</h3>
+                    <img src="../images/process_1.jpg" alt="process_1" width="250px;">
+                    <p class="para" style="text-align: justify;width: 230px"> You need to complete a very simple
+                        ,registration form. Whichcontains allrequired contact information to enter in the donation
+                        process.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3> 2: CAR CHECKING</h3>
+                    <img src="../images/process_2.jpg" alt="process_2" width="250px;">
+                    <p class="para" style="text-align: justify;width: 230px">
+                            Keep in mind that when you want to buy a car, people will also be evaluating you But do it your self without any arugemnts.
+                      </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3> 3: BUYING PROCESS</h3>
+                    <img src="../images/process_3.jpg" alt="process_3" width="250px;">
+                    <p class="para" style="text-align: justify;width: 230px">After ensuring and passed car test
+                        successfully you will be
+                        directed  to buy It and payment will be withdarw from your Acount Automatically.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3> 4: REFRESHMENT</h3>
+                    <img src="../images/process_4.jpg" alt="process_1" width="250px;">
+                    <p class="para" style="text-align: justify;width: 230px">You can also stay in sitting room until you
+                        feel happy with car enough to leave our center You will receive awesome
+                        from us in center zone.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Blood Donors -->
+
+    <div id="groups">
+        <h1 style="color: #0e9077;font-weight: bold;font-size:50px;"> MOST USED CARS </h1>
+        <p>
+            The most used Card in now a days
+        </p>
+
+
+        <div id="row">
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">AUDI CARS</h3>
+                    <img src="../images/images.png" style="width: 200px;" alt="">
+                </div>
+            </div>
+
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">BMW CARS</h3>
+                    <img src="../images/voiture.png" style="width: 200px;" alt="">
+
+                </div>
+            </div>
+
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">CHERRY CAR </h3>
+                    <img src="../images/images (2).png" style="width: 200px;" alt="">
+
+                </div>
+            </div>
+
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">CHEVROLET CAR</h3>
+                    <img src="../images/luxury-muscle-car-auto-automobile-gt-grand-turismo-512.png"
+                        style="width: 200px;" alt="">
+
+                </div>
+            </div>
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">HONDA CAR</h3>
+                    <img src="../images/images (1).png" style="width: 200px;" alt="">
+
+                </div>
+            </div>
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">HYUNDAI CAR</h3>
+                    <img src="../images/12-512.png" style="width: 200px;" alt="">
+
+                </div>
+            </div>
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">LAND ROVER CAR</h3>
+                    <img src="../images/images (3).png" style="width: 200px;" alt="">
+
+                </div>
+            </div>
+
+            <div id="column">
+                <div id="card">
+                    <h3 style="font-weight: bold;font-size: 18px;">MAZDA CAR</h3>
+                    <img src="../images/images (4).png" style="width: 200px;" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </br>
+    </br>
+    </br>
+    </br>
+
+
+
+
+
+
+    <div id="footer" style="background-color: #1A1A1A">
+
+        <div style="padding-left: 100px; padding-top:40px;padding-bottom:40px; display: inline-block;">
+            <h2 style="color: #0e9077;font-weight: bold;">ABOUT US</h2>
+
+            <p style="text-align: justify; width:330px; color: white;line-height: 30px;font-size: 17px;">
+                    A used car, a pre-owned vehicle, or a secondhand car, is a vehicle that has previously had one or more retail owners. Used cars are sold through a variety of outlets, including franchise and independent car dealers, rental car companies, leasing offices, auctions, and private party sales.
+            </p>
+
+        </div>
+
+        <div id="card" style="float: right;margin-right: 110px;width: 340px;margin-top: 70px;background-color: #0e9077">
+            <h3 style="color: white;font-weight: bold;font-size: 25px;">Total Users</h3>
+            <p style="font-size: 20px;color: white;" id="total">0</p>
+        </div>
+
+        <div
+            style="float: right;text-align: justify; width:330px; color: white;padding-left: 40px; padding-top:40px;padding-bottom:40px;">
+            <h2 style="color: #0e9077;font-weight: bold;">CONTACT US</h2>
+            <p class="fa fa-envelope" style="color: #0e9077">
+                <span style="color: white;font-size: 18px;font-weight: 900px; margin-left: 20px;"> support@center.com
+                </span> </br></br>
+                <span style="color: white;font-size: 18px;font-weight: 900px;margin-left: 40px;"> helpme@center.com
+                </span>
+            </p>
+
+            <p class="fa fa-location-arrow" style="color: #0e9077">
+                <span style="color: white;font-size: 18px;font-weight: 900px; margin-left: 20px;"> Karachi,Pakistan
+                </span> </br>
+            </p>
+
+            <p class="fa fa-phone" style="color: #0e9077">
+                <span style="color: white;font-size: 18px;font-weight: 900px; margin-left: 20px;"> 0334-3047083
+
+                </span> </br></br>
+                <span style="color: white;font-size: 18px;font-weight: 900px;margin-left: 40px;"> 0311-2033928
+                </span>
+            </p>
+        </div>
+
+        <h5 style="color: white; text-align: center;padding-bottom:40px;">Copyright © 2019, All Right Reserved - by
+            Sagar Vasu</h5>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+<script src="../js/home.js"></script>
+
+</html>
